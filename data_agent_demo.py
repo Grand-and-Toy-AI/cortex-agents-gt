@@ -27,11 +27,11 @@ from models import (
 
 dotenv.load_dotenv()
 
-PAT = os.getenv("CORTEX_AGENT_DEMO_PAT")
-HOST = os.getenv("CORTEX_AGENT_DEMO_HOST")
-DATABASE = os.getenv("CORTEX_AGENT_DEMO_DATABASE", "SNOWFLAKE_INTELLIGENCE")
-SCHEMA = os.getenv("CORTEX_AGENT_DEMO_SCHEMA", "AGENTS")
-AGENT = os.getenv("CORTEX_AGENT_DEMO_AGENT", "SALES_INTELLIGENCE_AGENT")
+PAT = os.getenv("SF_PAT")
+HOST = os.getenv("SF_HOST")
+DATABASE = os.getenv("CORTEX_AGENT_DEMO_DATABASE", "DEV_AI")
+SCHEMA = os.getenv("CORTEX_AGENT_DEMO_SCHEMA", "ENT_WAREHOUSE")
+AGENT = os.getenv("CORTEX_AGENT_DEMO_AGENT", "TEST1")
 
 
 def agent_run() -> requests.Response:
