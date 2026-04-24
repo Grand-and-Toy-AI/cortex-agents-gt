@@ -7,6 +7,7 @@ import pandas as pd
 import requests
 import sseclient
 import streamlit as st
+import dotenv
 
 from models import (
     ChartEventData,
@@ -23,6 +24,8 @@ from models import (
     ToolResultEventData,
     ToolUseEventData,
 )
+
+dotenv.load_dotenv()
 
 PAT = os.getenv("CORTEX_AGENT_DEMO_PAT")
 HOST = os.getenv("CORTEX_AGENT_DEMO_HOST")
